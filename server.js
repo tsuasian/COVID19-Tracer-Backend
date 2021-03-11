@@ -51,6 +51,7 @@ app.use(session({
 app.get('/', (req, res) => {
   console.log("Hit /")
   console.log(req.session)
+  res.send('PONG')
 });
 //
 app.post('/registration', function(req, res) {
